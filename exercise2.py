@@ -20,7 +20,20 @@ def create_list(list_of_names):
         else:
             return list_of_names
 
+def random_print(name_list):
+    random.shuffle(name_list)
+    print("Random Order:")
+    [print(f"{chr}") for chr in name_list]
+
+def sorted_print(name_list):
+    name_list.sort()
+    print("Sorted order:")
+    [print(f"{chr}") for chr in name_list]
+
 namelist = []
 new_list = create_list(namelist)
-print(new_list)
-#print([name for name in random.shuffle(new_list)])
+random_print(new_list)
+sorted_print(new_list)
+    
+
+
