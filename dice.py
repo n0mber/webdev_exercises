@@ -1,4 +1,4 @@
-from random import *
+from random import randint
 
 def die(n=1, sides=6):
     total = 0
