@@ -41,7 +41,7 @@ yellow_wizard = MagicUser("Yellow Wizard", 8, 8, 8)
 wizards = [red_wizard, blue_wizard, yellow_wizard]
 
 for i in range(1, rounds):
-    print("ROUND: ", 1)
+    print("ROUND: ", i)
     for wizard in wizards:
         if wizard.hit_point > 0 and wizard.energy > 0:
             if wizard.hit_point < wizard.max_hp-2 and d6() < 4:
